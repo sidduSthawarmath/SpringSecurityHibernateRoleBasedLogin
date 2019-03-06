@@ -1,7 +1,7 @@
-Project Name: spring-sec-rolebased-login
+Project Name: SpringSecurityHibernateRoleBasedLogin
 
 Login page:
-http://localhost:7070/spring-sec-rolebased-login/login
+http://localhost:7070/SpringSecurityHibernateRoleBasedLogin/login
 
 
 Here we will give authentication-provider
@@ -15,14 +15,14 @@ Roles defined : EMP and ADMIN
 
 access : 
 /test/**  -> can access without authentication
-(http://localhost:7070/spring-sec-rolebased-login/test/home)
+(http://localhost:7070/SpringSecurityHibernateRoleBasedLogin/test/home)
 
 /emp/**   ->access provided both EMP and ADMIN roles
-(http://localhost:7070/spring-sec-rolebased-login/emp/home)
+(http://localhost:7070/SpringSecurityHibernateRoleBasedLogin/emp/home)
 
 
 /admin/** ->access provided only ADMIN role
-(http://localhost:7070/spring-sec-rolebased-login/admin/home)
+(http://localhost:7070/SpringSecurityHibernateRoleBasedLogin/admin/home)
  
  
  Both Java code(SecurityConfiguration.java) and xml (security-config.xml) based configuration is provieded
